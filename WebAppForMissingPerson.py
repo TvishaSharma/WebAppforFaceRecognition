@@ -2,7 +2,6 @@ import cv2
 import numpy as np
 import face_recognition
 import os
-from datetime import datetime
 import streamlit as st
 
 html_temp = """
@@ -70,7 +69,7 @@ while run:
             print(name)
             cv2.rectangle(img, (x1, y2 - 35), (x2, y2), (0, 255, 0), cv2.FILLED)
             cv2.putText(img, name, (x1 + 6, y2 - 6), cv2.FONT_HERSHEY_COMPLEX, 0.5, (255, 255, 255), 1)
-            markAttendance(name)
+           
         else:
             cv2.rectangle(img, (x1, y2 - 35), (x2, y2), (0, 255, 255), cv2.FILLED)
             cv2.putText(img, 'Not the missing person', (x1 + 6, y2 - 6), cv2.FONT_HERSHEY_COMPLEX, 0.5, (255, 255, 255), 1)
