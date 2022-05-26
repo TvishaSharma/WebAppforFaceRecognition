@@ -41,19 +41,6 @@ def findEncodings(images):
         encodeList.append(encode)
     return encodeList
 
-#We will now enter data into a list ,this will contain name of the missing person and time at which the person will run the program.
-def markAttendance(name):
-   with open('markAttendance.csv', 'r+') as f:
-        myDataList = f.readlines()
-        nameList=[]
-        for line in myDataList:
-            entry = line.split(',')
-            nameList.append(entry[0])
-        if name not in nameList:
-            now = datetime.now()
-            dtString = now.strftime('%H:%M:%S')
-            f.writelines(f'\n{name},{dtString}')
-
 
 encodeListKnown = findEncodings(images)
 print('Encoding Completed')
