@@ -1,0 +1,7 @@
+streamlit
+os
+numpy>=1.21.6
+face_recognition1.3.0
+opencv4.5.5.64
+cmake3.22.4
+dlib19.24.0
