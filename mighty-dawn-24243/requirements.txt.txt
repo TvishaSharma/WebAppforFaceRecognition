@@ -1,0 +1,5 @@
+streamlit
+os
+numpy
+face_recognition
+opencv
