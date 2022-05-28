@@ -77,8 +77,8 @@ while run:
 
 
     FRAME_WINDOW.image(img)
-st.image("missing people imgs//india stats of missing cases.jpeg")
-st.image("missing people imgs//news article.jpeg")
+st.image("img for webapp//india stats of missing cases.jpeg")
+st.image("img for webapp//news article.jpeg")
 
 st.text("Thank You for choosing us, Hope you have found your missing family member")
 
